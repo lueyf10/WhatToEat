@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "547396148558",
+    "project_id": "whattoeat-194ae",
+    "storage_bucket": "whattoeat-194ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547396148558:android:93aff4de2820667b11121f",
+        "android_client_info": {
+          "package_name": "my.edu.utar.ga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547396148558-t22ir5sqdq10kbvp7fi41brfntdr15bm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApEVnptUe1wNC7V0fD2eM7zinCASIQnwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547396148558-t22ir5sqdq10kbvp7fi41brfntdr15bm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

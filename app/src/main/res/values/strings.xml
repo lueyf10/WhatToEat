@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GA</string>
+    <string name="local_restaurant">Local Restaurant</string>
 </resources>

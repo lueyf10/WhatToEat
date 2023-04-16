@@ -10,6 +10,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GA">
         <activity
+            android:name=".SecretRecipe"
+            android:exported="false" />
+        <activity
+            android:name=".Domino"
+            android:exported="false" />
+        <activity
+            android:name=".RiceGarden"
+            android:exported="false" />
+        <activity
+            android:name=".Karim"
+            android:exported="false" />
+        <activity
+            android:name=".KFC"
+            android:exported="false" />
+        <activity
+            android:name=".ThaiThaiThai"
+            android:exported="false" />
+        <activity
+            android:name=".SecretCoffee"
+            android:exported="false" />
+        <activity
+            android:name=".SushiMentai"
+            android:exported="false" />
+        <activity
+            android:name=".Mcdonald"
+            android:exported="false" />
+        <activity
+            android:name=".CustomListView"
+            android:exported="false" />
+        <activity
             android:name=".Registration"
             android:exported="false" />
         <activity

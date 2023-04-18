@@ -1,26 +1,33 @@
 package my.edu.utar.ga;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity2 extends AppCompatActivity {
     String RestaurantList[]={"McDonald","Sushi Mentai","Secret Coffee","Thai Thai Thai","Karim","Rice Garden","KFC","Domino","Secret Recipe"};
     int RestaurantImages [] ={R.drawable.mcdonald,R.drawable.sushi_mentai,R.drawable.secret_coffee,R.drawable.thai_thai_thai,R.drawable.karim,R.drawable.rice_garden,R.drawable.kfc,R.drawable.domino,R.drawable.secret_recipe};
 
     ListView listView;
+    Button firstFragmentBtn, secondFragmentBtn,thirdFragmentBtn,fourthFragmentBtn,fifthFragmentBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        firstFragmentBtn=findViewById(R.id.Favourite);
+        secondFragmentBtn=findViewById(R.id.Search);
+        thirdFragmentBtn=findViewById(R.id.main);
+        fourthFragmentBtn=findViewById(R.id.Spin);
+        fifthFragmentBtn=findViewById(R.id.Profile);
+
         listView =(ListView)findViewById(R.id.customListView);
         CustomBaseAdapter customBaseAdapter=new CustomBaseAdapter(getApplicationContext(),RestaurantList,RestaurantImages);
         listView.setAdapter(customBaseAdapter);
@@ -58,18 +65,43 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
-        /*List<String> list= new ArrayList<>();
-        list.add("McDonald");
-        list.add("Sushi Mentai");
-        list.add("Secret Coffee");
-        list.add("Thai Thai Thai");
-        list.add("Karim");
-        list.add("Rice Garden");
-        list.add("KFC");
-        list.add("Domino");
-        list.add("Secret Recipe");
+        firstFragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-        ArrayAdapter arrayAdapter = new ArrayAdapter( )*/
+                startActivity(new Intent(MainActivity2.this,Profile.class));
+            }
+        });
+
+        secondFragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity2.this,Search.class));
+            }
+        });
+        thirdFragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity2.this,MainActivity2.class));
+            }
+        });
+
+        fourthFragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity2.this,Spin.class));
+            }
+        });
+        fifthFragmentBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(MainActivity2.this,Profile.class));
+            }
+        });
 
 
     }

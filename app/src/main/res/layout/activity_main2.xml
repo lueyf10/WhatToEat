@@ -6,37 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
-    <com.google.android.material.appbar.AppBarLayout
+
+    <FrameLayout
+
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        android:layout_height="600dp">
 
-
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            app:layout_scrollFlags="scroll|enterAlways"
-            app:title="Dashboard">
-
-            <androidx.appcompat.widget.SearchView
-                android:id="@+id/search_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:iconifiedByDefault="false"
-                app:queryHint="Search" />
-
-        </androidx.appcompat.widget.Toolbar>
-
-    </com.google.android.material.appbar.AppBarLayout>
-
+    </FrameLayout>
 
     <LinearLayout
         android:id="@+id/homelayout"
         android:layout_width="match_parent"
-        android:layout_height="523dp"
-        android:layout_marginTop="100dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="15dp"
@@ -44,9 +26,11 @@
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <!-- Add your ImageView buttons here -->
+
         <TextView
             android:layout_width="388dp"
             android:layout_height="65dp"
+            android:layout_marginTop="50dp"
             android:background="#9C27B0"
             android:text="@string/local_restaurant"
             android:textAlignment="center"
@@ -64,13 +48,58 @@
         <ListView
             android:id="@+id/customListView"
             android:layout_width="wrap_content"
-            android:layout_height="262dp"
-            android:layout_marginStart="36dp"
+            android:layout_height="406dp"
+            android:layout_marginStart="0dp"
             android:layout_marginBottom="136dp"
             android:divider="@color/black"
             android:dividerHeight="2dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent">
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="313dp"
+            android:layout_height="73dp"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Favourite"
+                android:layout_width="91dp"
+                android:layout_height="73dp"
+                android:layout_weight="1"
+                android:text="Favourite"
+                android:textSize="9sp" />
+
+            <Button
+                android:id="@+id/Search"
+                android:layout_width="wrap_content"
+                android:layout_height="73dp"
+                android:layout_weight="1"
+                android:text="Search" />
+
+            <Button
+                android:id="@+id/main"
+                android:layout_width="wrap_content"
+                android:layout_height="73dp"
+                android:layout_weight="1"
+                android:text="Home" />
+
+            <Button
+                android:id="@+id/Spin"
+                android:layout_width="wrap_content"
+                android:layout_height="73dp"
+                android:layout_weight="1"
+                android:text="Spin" />
+
+            <Button
+                android:id="@+id/Profile"
+                android:layout_width="wrap_content"
+                android:layout_height="73dp"
+                android:layout_weight="1"
+                android:text="Profile" />
+        </LinearLayout>
 
 
     </LinearLayout>

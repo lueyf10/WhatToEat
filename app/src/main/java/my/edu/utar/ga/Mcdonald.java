@@ -2,7 +2,10 @@ package my.edu.utar.ga;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Mcdonald extends AppCompatActivity {
 
@@ -44,6 +47,8 @@ public class Mcdonald extends AppCompatActivity {
         TextView sundayHoursTextView = findViewById(R.id.sundayHoursTextView);
         TextView budgetTextView = findViewById(R.id.budgetTextView);
         TextView descriptionTextView = findViewById(R.id.descriptionTextView);
+        Button submitButton = findViewById(R.id.submitButton);
+
 
         nameTextView.setText("Name: " + name);
         categoryTextView.setText("Category: " + category);
@@ -57,11 +62,42 @@ public class Mcdonald extends AppCompatActivity {
         sundayHoursTextView.setText("Sunday Hours: " + sundayHours);
         budgetTextView.setText("Budget: " + budget);
         descriptionTextView.setText("Description: " + description);
+
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Call a method to add the restaurant to the favorites
+                addToFavorites();
+            }
+        });
     }
+
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         dbHelper.close();
+    }
+    private void addToFavorites() {
+        // Get the restaurant details
+        String name = "McDonald";
+        String category = "Fastfood";
+        double rating = 4.7;
+        String mondayHours = "11:30 AM - 2:30 PM, 5:30 PM - 10:30 PM";
+        String tuesdayHours = "11:30 AM - 2:30 PM, 5:30 PM - 10:30 PM";
+        String wednesdayHours = "11:30 AM - 2:30 PM, 5:30 PM - 10:30 PM";
+        String thursdayHours = "11:30 AM - 2:30 PM, 5:30 PM - 10:30 PM";
+        String fridayHours = "11:30 AM - 2:30 PM, 5:30 PM - 10:30 PM";
+        String saturdayHours = "11:30 AM - 2:30 PM, 5:30 PM - 10:30 PM";
+        String sundayHours = "11:30 AM - 2:30 PM, 5:30 PM - 10:30 PM";
+        String budget = "$$$";
+        String description = "Mc Lovin It";
+
+        // Insert the restaurant into the favorites table
+        DatabaseHelper dbHelper = new DatabaseHelper(this); // Instantiate DatabaseHelper
+        dbHelper.insertFavorite(name, category);
+
+        // Show a toast or a dialog indicating that the restaurant has been added to favorites
+        Toast.makeText(this, "Added to Favorites", Toast.LENGTH_SHORT).show();
     }
 }

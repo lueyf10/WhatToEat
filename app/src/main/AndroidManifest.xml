@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GA">
         <activity
+            android:name=".InputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SpinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InputActivty"
+            android:exported="false" />
+        <activity
+            android:name=".ModifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".HanBrothers"
             android:exported="false" />
         <activity

@@ -149,17 +149,18 @@
             android:text="Description: "
             android:textColor="#212121"
             android:textSize="18sp" />
+
         <Button
             android:id="@+id/submitButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/descriptionTextView"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="16dp"
-            android:text="Submit"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#32AF9F"
+            android:text="Add to Favourite"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:backgroundTint="#32AF9F" />
+            android:textStyle="bold" />
 
     </RelativeLayout>
 </ScrollView>

@@ -24,7 +24,7 @@
         <entry key="..\:/Users/Genius/AndroidStudioProjects/GA/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/Genius/AndroidStudioProjects/GA/app/src/main/res/layout/activity_main.xml" value="0.2604166666666667" />
         <entry key="..\:/Users/Genius/AndroidStudioProjects/GA/app/src/main/res/layout/activity_main2.xml" value="0.2904040404040404" />
-        <entry key="..\:/Users/Genius/AndroidStudioProjects/GA/app/src/main/res/layout/activity_mcdonald.xml" value="0.25" />
+        <entry key="..\:/Users/Genius/AndroidStudioProjects/GA/app/src/main/res/layout/activity_mcdonald.xml" value="0.5231788079470199" />
         <entry key="..\:/Users/Genius/AndroidStudioProjects/GA/app/src/main/res/layout/activity_mochiyuk_origami.xml" value="0.1" />
         <entry key="..\:/Users/Genius/AndroidStudioProjects/GA/app/src/main/res/layout/activity_modify.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/Genius/AndroidStudioProjects/GA/app/src/main/res/layout/activity_profile.xml" value="0.246875" />
@@ -59,5 +59,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.36666666666666664" />
+      </ProjectState>
+    </option>
   </component>
 </project>

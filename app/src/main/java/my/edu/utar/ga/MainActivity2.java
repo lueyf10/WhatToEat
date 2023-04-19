@@ -9,6 +9,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 public class MainActivity2 extends AppCompatActivity {
@@ -16,7 +18,7 @@ public class MainActivity2 extends AppCompatActivity {
     int RestaurantImages [] ={R.drawable.mcdonald,R.drawable.sushi_mentai,R.drawable.secret_coffee,R.drawable.thai_thai_thai,R.drawable.karim,R.drawable.rice_garden,R.drawable.kfc,R.drawable.domino,R.drawable.secret_recipe};
 
     ListView listView;
-    Button firstFragmentBtn, secondFragmentBtn,thirdFragmentBtn,fourthFragmentBtn,fifthFragmentBtn;
+    ImageView firstFragmentBtn, secondFragmentBtn,thirdFragmentBtn,fourthFragmentBtn,fifthFragmentBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,7 +71,7 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity2.this,Profile.class));
+                startActivity(new Intent(MainActivity2.this,Favourite.class));
             }
         });
 
@@ -92,14 +94,14 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity2.this,Spin.class));
+                startActivity(new Intent(MainActivity2.this,InputActivity.class));
             }
         });
         fifthFragmentBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                startActivity(new Intent(MainActivity2.this,Profile.class));
+                startActivity(new Intent(MainActivity2.this,ProfileActivity.class));
             }
         });
 

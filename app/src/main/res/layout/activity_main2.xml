@@ -64,41 +64,40 @@
             android:layout_marginBottom="0dp"
             android:orientation="horizontal">
 
-            <Button
+            <ImageView
                 android:id="@+id/Favourite"
-                android:layout_width="91dp"
+                android:layout_width="wrap_content"
                 android:layout_height="73dp"
                 android:layout_weight="1"
-                android:text="Favourite"
-                android:textSize="9sp" />
+                android:src="@drawable/favourite"/>
 
-            <Button
+            <ImageView
                 android:id="@+id/Search"
                 android:layout_width="wrap_content"
                 android:layout_height="73dp"
                 android:layout_weight="1"
-                android:text="Search" />
+                android:src="@drawable/filter"/>
 
-            <Button
+            <ImageView
                 android:id="@+id/main"
                 android:layout_width="wrap_content"
                 android:layout_height="73dp"
                 android:layout_weight="1"
-                android:text="Home" />
+                android:src="@drawable/home"/>
 
-            <Button
+            <ImageView
                 android:id="@+id/Spin"
                 android:layout_width="wrap_content"
                 android:layout_height="73dp"
                 android:layout_weight="1"
-                android:text="Spin" />
+                android:src="@drawable/spin"/>
 
-            <Button
+            <ImageView
                 android:id="@+id/Profile"
                 android:layout_width="wrap_content"
                 android:layout_height="73dp"
                 android:layout_weight="1"
-                android:text="Profile" />
+                android:src="@drawable/profile"/>
         </LinearLayout>
 
 

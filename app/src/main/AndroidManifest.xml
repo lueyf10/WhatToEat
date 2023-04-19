@@ -10,6 +10,63 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GA">
         <activity
+            android:name=".HanBrothers"
+            android:exported="false" />
+        <activity
+            android:name=".MochiyukOrigami"
+            android:exported="false" />
+        <activity
+            android:name=".Facefood"
+            android:exported="false" />
+        <activity
+            android:name=".SkyViewCuisine"
+            android:exported="false" />
+        <activity
+            android:name=".THESTORY"
+            android:exported="false" />
+        <activity
+            android:name=".EntertainmentHub"
+            android:exported="false" />
+        <activity
+            android:name=".RestoranHongHwai"
+            android:exported="false" />
+        <activity
+            android:name=".VeganLifeRestaurant"
+            android:exported="false" />
+        <activity
+            android:name=".Buddies"
+            android:exported="false" />
+        <activity
+            android:name=".WoodyHouse"
+            android:exported="false" />
+        <activity
+            android:name=".AsianDelightsRestaurant"
+            android:exported="false" />
+        <activity
+            android:name=".BurgerKing"
+            android:exported="false" />
+        <activity
+            android:name=".Subway"
+            android:exported="false" />
+        <activity
+            android:name=".IchibanFoodJunction"
+            android:exported="false" />
+        <activity
+            android:name=".GhanyCorner"
+            android:exported="false" />
+        <activity
+            android:name=".UncleDon"
+            android:exported="false" />
+        <activity
+            android:name=".SpadeBurgerKampar"
+            android:exported="false" />
+        <activity
+            android:name=".WingZoneKampar"
+            android:exported="false" />
+        <activity
+            android:name=".AhBoyNoodle"
+            android:exported="false" />
+        <activity
             android:name=".Spin"
             android:exported="false" />
         <activity

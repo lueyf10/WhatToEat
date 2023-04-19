@@ -1,0 +1,165 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#32AF9F4C"> <!-- Set background color -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:text="Name: "
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textStyle="bold" /> <!-- Set text color -->
+
+        <TextView
+            android:id="@+id/categoryTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            android:text="Category: "
+            android:textColor="#212121"
+            android:textSize="20sp"
+            android:textStyle="bold" /> <!-- Set text color -->
+
+        <TextView
+            android:id="@+id/ratingTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:text="Rating: "
+            android:textColor="#212121"
+            android:textSize="12sp" /> <!-- Set text color -->
+
+        <TextView
+            android:id="@+id/mondayHoursTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Monday Hours: "
+            android:textColor="#212121"
+            android:textSize="12sp" /> <!-- Set text color -->
+
+        <TextView
+            android:id="@+id/tuesdayHoursTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mondayHoursTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Tuesday Hours: "
+            android:textColor="#212121"
+            android:textSize="12sp" /> <!-- Set text color -->
+
+        <TextView
+            android:id="@+id/wednesdayHoursTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tuesdayHoursTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Wednesday Hours: "
+            android:textColor="#212121"
+            android:textSize="12sp" /> <!-- Set text color -->
+
+        <TextView
+            android:id="@+id/thursdayHoursTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wednesdayHoursTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Thursday Hours: "
+            android:textColor="#212121"
+            android:textSize="12sp" /> <!-- Set text color -->
+
+        <TextView
+            android:id="@+id/fridayHoursTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/thursdayHoursTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Friday Hours: "
+            android:textColor="#212121"
+            android:textSize="12sp" /> <!-- Set text color -->
+
+        <TextView
+            android:id="@+id/saturdayHoursTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fridayHoursTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Saturday Hours: "
+            android:textColor="#212121"
+            android:textSize="12sp" /> <!-- Set text color -->
+
+        <TextView
+            android:id="@+id/sundayHoursTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saturdayHoursTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Sunday Hours: "
+            android:textColor="#212121"
+            android:textSize="12sp" /> <!-- Set text color -->
+
+        <TextView
+            android:id="@+id/budgetTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="16dp"
+            android:layout_below="@id/sundayHoursTextView"
+            android:text="Budget: "
+            android:textColor="#212121" />
+
+        <TextView
+            android:id="@+id/descriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/budgetTextView"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="14dp"
+            android:text="Description: "
+            android:textColor="#212121"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="#32AF9F" />
+
+    </RelativeLayout>
+</ScrollView>
